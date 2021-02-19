@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container-page">
   <h1 class= "main-header-show"><%= @cocktail.name %></h1>
     <%= cl_image_tag @cocktail.photo.key, height: 300, width: 400, crop: :fill, class: 'image_cocktail'%>
   <div>
@@ -10,7 +10,7 @@
   </div>
   <div class="cards">
     <div class="card-category-show">
-      <%= link_to "Can you make this #{@cocktail.name} better?", new_cocktail_dose_path(@cocktail) %>
+      <%= link_to "Can you make #{@cocktail.name} better?", new_cocktail_dose_path(@cocktail) %>
     </div>
     <div class="card-category-show">
       <%= link_to "Why not make you own?", new_cocktail_path %>
