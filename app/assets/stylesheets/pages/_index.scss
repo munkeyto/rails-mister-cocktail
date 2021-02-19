@@ -1,2 +1,14 @@
 // Import page-specific CSS files here.
 @import "home";
+
+body {
+  text-align: center;
+}
+
+.main-header {
+  padding-top: 20px;
+  padding-bottom: 48px;
+  margin: 0;
+  font-size: 5em;
+  color: black;
+}

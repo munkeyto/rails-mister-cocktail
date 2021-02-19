@@ -1,0 +1,13 @@
+<div class="container">
+  <h1 class="main-header">Cocktails at "The Wagon"</h1>
+
+<div class="cards">
+  <% @cocktails.each do |cocktail| %>
+    <div class="card-category">
+      <h3><%= link_to "#{cocktail.name}", cocktail_path(cocktail) %></h3> |
+      <% cocktail.doses.each do |dose| %>
+        <%= dose.description %> of <%= dose.ingredient.name %> |
+      <% end  %> 
+    </div>
+  <% end %>
+</div>

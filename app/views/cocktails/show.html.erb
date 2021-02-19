@@ -1,0 +1,19 @@
+<div class="container">
+  <h1 class= "main-header"><%= @cocktail.name %></h1>
+  <div>
+    <p>Ingredients include:</p>
+    <% @cocktail.doses.each do |dose| %>
+      <p><%= dose.ingredient.name %> - <%= dose.description %> -
+        <%= link_to "X", dose_path(dose), method: :delete, data: { confirm: "Are you sure you wish to delete?" } %>
+      <% end %></p>
+  </div>
+  <div class="cards">
+    <div class="card-category-show">
+      <%= link_to "Can you make this #{@cocktail.name} better?", new_cocktail_dose_path(@cocktail) %>
+    </div>
+    <div class="card-category-show">
+      <%= link_to "Why not make you own?", new_cocktail_path %>
+    </div>
+  </div>
+  <p><%= link_to "Back to the main menu", cocktails_path %></p>
+</div>
