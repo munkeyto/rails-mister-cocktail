@@ -1,12 +1,8 @@
 <div class="container">
-
-  <h1 class="main-header">New Cocktail<h1>
-
-  <div class = "form">
-    <%= simple_form_for @cocktail do |f| %>
-      <%= f.input :name %>
-        <%= f.input :photo, as: :file %>
-      <%= f.submit %>
-    <% end %>
-  </div>
+  <h1 class="main-header">New Cocktail</h1>
+  <%= simple_form_for @cocktail do |f| %>
+    <%= f.input :name%>
+      <%= f.input :photo, as: :file%>
+    <%= f.submit %>
+  <% end %>
 </div>

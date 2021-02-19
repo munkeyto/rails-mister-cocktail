@@ -5,10 +5,16 @@ body {
   text-align: center;
 }
 
-.main-header {
-  padding-top: 32px;
-  padding-bottom: 48px;
-  margin: 0;
+h1 {
+  margin-top: 32px;
   font-size: 5em;
   color: black;
+}
+
+.main-header {
+  margin-bottom: 48px;
+}
+
+.main-header-show {
+  margin-bottom: 16px;
 }
